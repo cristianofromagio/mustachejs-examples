@@ -1,0 +1,19 @@
+{
+	"devs": [
+		{
+			"nome": "Cristiano",
+			"apelido": "cristiano",
+			"github": "https://github.com/cristianofromagio"
+		},
+		{
+			"nome": "Daniel",
+			"apelido": "daniel",
+			"github": "https://github.com/danielsvs"
+		},
+		{
+			"nome": "Igor",
+			"apelido": "igor",
+			"github": "https://github.com/igorazramos"
+		}
+	]
+}

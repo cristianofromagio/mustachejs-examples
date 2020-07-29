@@ -1,0 +1,26 @@
+{
+	"verso1": "na minha terra tem palmiras",
+	"verso2": "onde canta o sabiá",
+	"verso3": "os passáros que aqui gorgeiam",
+	"verso4": "não gorgeiam como lá",
+	"versos": [
+		"oi",
+		"sim",
+		"olá"
+	],
+	"versos-complexos": [
+		{
+			"conteudo": "Versos complexos são doidera",
+			"autor": "John Doe"
+		},
+		{
+			"conteudo": "Versos complexos são fixinha",
+			"autor": "Antedeguemon"
+		},
+		{
+			"conteudo": "Não sei se compro a passagem ou uma goiaba",
+			"autor": "Indeciso no ponto do ônibus"
+		}
+	],
+	"autor": "Gonçalves Dias"
+}

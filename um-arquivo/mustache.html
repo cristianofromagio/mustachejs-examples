@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Teste Mustache</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.1/mustache.min.js" integrity="sha512-6AXIWogbKpsHvoZJrJtHpIYES4wP8czSj0zk7ZfwOYS8GWYFNSykwdfapt7yQc4ikZytemBu+QyVObzBHJMwYg==" crossorigin="anonymous"></script>
+</head>
+<body>
+	<h1>Meu título</h1>
+	<div id="output"></div>
+
+	<script type="script/template" id="template">
+		{{ variavel1 }}
+		{{ variavel2 }}
+		{{{ func }}}
+	</script>
+
+	<script>
+		var output = document.getElementById('output');
+		
+		// ESTRUTURA 1 = template mustache
+		var template = document.getElementById('template');
+		
+		// ESTRUTURA 2 = view (dados)
+		var dados = {
+			variavel1: 'eu sou a primeira variável',
+			variavel2: 'eu tenho duas variáveis',
+			func: function () {
+				return '<i>teste italico</i>';
+			}
+		};
+
+		var html = Mustache.render(template.innerHTML, dados);
+		output.innerHTML = html;
+	</script>
+</body>
+</html>

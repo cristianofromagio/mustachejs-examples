@@ -1,0 +1,75 @@
++----------+
+
+[ O QUE É USADO NO TANABIO-COMPILER ]
+/*/.json
+.mustache 1
+
+outputs { /*/ 1.ext }
+
++----------+
+
+[COMPORTAMENTO PADRÃO]
+.mustache 1
+.json 1
+
+outputs { 1 .ext }
+
++----------+
+
+[EXEMPLOS]
+
+index.mustache
+	{{ menuNav.url + menuNav.label }}
+contato.mustache
+	{{ menuNav.url + menuNav.label }}
+sobre.mustache
+	{{ menuNav.url + menuNav.label }}
+
+{
+	"menuNav": [
+		{
+			"label": "Início",
+			"url": "https://site.com/inicio"
+		},
+		{
+			"label": "Currículo",
+			"url": "https://site.com/cv"
+		},
+		{
+			"label": "Links",
+			"url": "https://site.com/tanabio"
+		},
+	]
+}
+
++----------+
+
+[ MUDAR O IDIOMA DA PÁGINA E NÃO IDIOMA DO CLIENTE ]
+
+template-pt.mustache
+	{{ link.title.pt }}
+	{{ link.url }}
+template-en.mustache
+	{{ link.title.en }}
+	{{ link.url }}
+template-es.mustache
+	{{ link.title.es }}
+	{{ link.url }}
+
+{
+	"links": [
+		"title": {
+			"pt": "Meu título",
+			"en": "My title",
+			"es": "Mi título"
+		},
+		"description": {
+			"pt": "Minha descrição",
+			"en": "My description",
+			"es": "Mi descripción"
+		},
+		"url": "https://site.com"
+	]
+}
+
++----------+

@@ -1,0 +1,18 @@
+>> {{ verso1 }}
+>> {{ verso2 }}
+>> {{ verso3 }}
+>> {{ verso4 }}
+
+
+{{#versos}}
+- {{.}}
+{{/versos}}
+
+
+{{#versos-complexos}}
+- {{conteudo}}
+	+ {{autor}}
+{{/versos-complexos}}
+
+
+# {{ autor }}

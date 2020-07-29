@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Colaboradores</title>
+</head>
+<body>
+	<h1>Lista simples de colaboradores</h1>
+
+	{{#devs}}
+		<ul>
+			<li>{{ nome }}</li>
+			<li>{{ apelido }}</li>
+			<li>{{{ github }}}</li>
+		</ul><br>
+
+	{{/devs}}
+
+</body>
+</html>

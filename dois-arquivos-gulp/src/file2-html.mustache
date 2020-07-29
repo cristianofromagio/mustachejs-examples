@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Listagem - Desenvolvedores +TOP</title>
+</head>
+<body>
+	<h1>Aqui é só os BRABO</h1>
+
+	{{#devs}}
+		<div class="cartao">
+			<h1 class="titulo">{{ nome }}</h1>
+			<h3 class="subtitulo">Também conhecido como: {{ apelido }}</h3>
+			<a href="{{{ github }}}">Conheça mais sobre seus trabalhos</a>
+		</div>
+
+	{{/devs}}
+
+</body>
+</html>
